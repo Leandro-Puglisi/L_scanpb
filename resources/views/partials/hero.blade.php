@@ -7,7 +7,7 @@
             <div class="col-lg-6 text-center">
               <h2>Benvenuto in scanPB</h2>
               <p>testo di prova.</p>
-              <a href="#get-started" class="btn-get-started">Get Started</a>
+              <a href="#get-started" class="btn-get-started">inizia da qua </a>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@
 @section('main')
 
     @include('partials.hero')
-    @include('partials.get-started')
+    @include('partials.services')
     
 
 @endsection
