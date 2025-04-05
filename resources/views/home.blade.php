@@ -4,6 +4,8 @@
 
     @include('partials.hero')
     @include('partials.services')
+    @include('partials.get-started')
+    
     
 
 @endsection
