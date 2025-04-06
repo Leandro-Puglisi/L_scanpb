@@ -1,6 +1,6 @@
-<div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
+
     <form wire:submit.prevent="submit" class="php-email-form">
-        @csrf
+        
         <h3>Richiedi un Preventivo</h3>
         <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
         <div class="row gy-3">
@@ -40,4 +40,4 @@
 
         </div>
     </form>
-</div>
+

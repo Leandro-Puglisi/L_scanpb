@@ -13,13 +13,9 @@
               <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt porro magni qui necessitatibus dolorem at animi cupiditate.</p>
             </div>
           </div>
-
-          @livewire('contact-form')
-
-
-              
-            
-          
+          <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
+            @livewire('contact-form')
+          </div>
 
         </div>
 
