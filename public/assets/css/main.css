@@ -100,7 +100,7 @@ h6 {
 }
 
 .php-email-form .sent-message {
-  display: none;
+  display: block;
   color: #ffffff;
   background: #059652;
   text-align: center;

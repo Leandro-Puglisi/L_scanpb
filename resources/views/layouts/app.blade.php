@@ -27,6 +27,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
+
 
 
 </head>
@@ -171,6 +173,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
 
 </body>
 
