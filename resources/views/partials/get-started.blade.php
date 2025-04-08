@@ -15,6 +15,7 @@
           </div>
           <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
             @livewire('contact-form')
+            
           </div>
 
         </div>

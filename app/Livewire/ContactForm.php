@@ -10,13 +10,17 @@ class ContactForm extends Component
 {
     public $nome, $cognome, $email, $telefono,$messaggio;
     public $messageSent = false;
+    public $recaptchaToken;
 
+
+    
     protected $rules = [
     'nome' => 'required|string|max:255|regex:/^[\pL\s\-]+$/u',
     'cognome' => 'required|string|max:255|regex:/^[\pL\s\-]+$/u',
     'email' => 'required|email:rfc,dns',
     'telefono' => 'required|string|max:20|regex:/^[0-9+\s()-]+$/',
     'messaggio' => 'required|string',
+    'recaptchaToken' => 'required|string',
     
     ];
     protected $messages = [ 
@@ -33,13 +37,30 @@ class ContactForm extends Component
         'telefono.regex' => 'Il numero di telefono può contenere solo numeri, spazi, parentesi e simboli come + o -.',
         
         'messaggio.required' => 'Scrivi un messaggio.',
+        'recaptchaToken.required' => 'capta richiesto',
+        'recaptchaToken.regex' => 'capta non è stringa',
         
     ];
     
 
-    public function submit()
+    public function submitForm()
     {
         $this->validate();
+        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => env('RECAPTCHA_SECRET_KEY'),
+            'response' => $this->recaptchaToken,
+        ]);
+        // Controlla la risposta
+        if (
+            !$response->json('success') ||
+            $response->json('score') < 0.5 ||
+            $response->json('action') !== 'contact_form'
+        ) {
+            $this->addError('recaptchaToken', 'Verifica reCAPTCHA fallita. Riprova.');
+            return; // Esci dalla funzione se la verifica fallisce
+        }
+       
+
 
        
         Message::create([

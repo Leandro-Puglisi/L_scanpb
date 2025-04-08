@@ -2,6 +2,7 @@
 <html lang="it">
 
 <head>
+  
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Scanpb.it</title>
@@ -27,8 +28,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
-
+  @livewireStyles
 
 
 </head>
@@ -173,7 +173,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+  @livewireScripts
+  @stack('scripts')
 
 </body>
 
