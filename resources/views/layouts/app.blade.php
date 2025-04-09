@@ -7,10 +7,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Scanpb.it</title>
   <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="scanzioni laser 3d nuvole di punti">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.svg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -40,7 +40,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
          
-        <img src="assets/img/scanpb.png" alt=""> 
+        <img src="assets/img/scanpb.svg" alt=""> 
         <!--<h1 class="sitename">ScanPB.it</h1> <span>.</span>-->
       </a>
 
