@@ -40,7 +40,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
          
-        <img src="assets/img/scanpb.jpg" alt=""> 
+        <img src="assets/img/scanpb.png" alt=""> 
         <!--<h1 class="sitename">ScanPB.it</h1> <span>.</span>-->
       </a>
 
