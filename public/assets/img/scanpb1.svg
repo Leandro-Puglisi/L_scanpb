@@ -1,0 +1,27 @@
+
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00BFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#007ACC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Scanner Icon -->
+  <g transform="translate(10,20)">
+    <rect x="0" y="0" width="40" height="60" rx="8" fill="url(#blueGradient)" />
+    <circle cx="20" cy="20" r="6" fill="white"/>
+    <line x1="20" y1="26" x2="20" y2="60" stroke="white" stroke-width="2" stroke-dasharray="4,2"/>
+  </g>
+
+  <!-- Wireframe Building -->
+  <g transform="translate(60,10)" stroke="#00BFFF" stroke-width="2" fill="none">
+    <rect x="0" y="0" width="30" height="60"/>
+    <line x1="0" y1="20" x2="30" y2="20"/>
+    <line x1="0" y1="40" x2="30" y2="40"/>
+    <line x1="10" y1="0" x2="10" y2="60"/>
+    <line x1="20" y1="0" x2="20" y2="60"/>
+  </g>
+
+  <!-- Text -->
+  <text x="110" y="65" font-family="Segoe UI, sans-serif" font-size="42" font-weight="bold" fill="url(#blueGradient)">ScanPB</text>
+</svg>
